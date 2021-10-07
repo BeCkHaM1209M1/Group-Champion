@@ -1,40 +1,42 @@
 age  = int(input("Your age  : "))
 #Def
+def printideaw(a,b):
+    print(f"Your ideal weight is :{a} -{b} kg")
 def weightidea(h):
     if 140<=h<142:
-        print("Your ideal weight is :30 -39 kg")
+        printideaw(30,39)
     elif 142<=h<144:
-        print("Your ideal weight is :33 -40 kg")
+        printideaw(33,40)
     elif 144<=h<147:
-        print("Your ideal weight is :35 -44 kg")
+        printideaw(35,44)
     elif 147<=h<150:
-        print("Your ideal weight is :38 -46 kg")
+        printideaw(38,46)
     elif 150<=h<152:
-        print("Your ideal weight is :40 -50 kg")
+        printideaw(40,50)
     elif 152<=h<155:
-        print("Your ideal weight is :43 -53 kg")
+        printideaw(42,53)
     elif 155<=h<157:
-        print("Your ideal weight is :45 -55 kg")
+        printideaw(45,55)
     elif 157<=h<160:
-        print("Your ideal weight is :48 -59 kg")
+        printideaw(48,59)
     elif 160<=h<162:
-        print("Your ideal weight is :50 -61 kg")
+        printideaw(50,61)
     elif 162<=h<165:
-        print("Your ideal weight is :53 -65 kg")
+        printideaw(53,65)
     elif 165<=h<168:
-        print("Your ideal weight is :56 -68 kg")
+        printideaw(56,68)
     elif 168<=h<170:
-        print("Your ideal weight is :58- 70 kg")
+        printideaw(58,70)
     elif 170<=h<173:
-        print("Your ideal weight is :60 -74 kg")
+        printideaw(60,74)
     elif 173<=h<175:
-        print("Your ideal weight is :63 -76 kg")
+        printideaw(63,76)
     elif 175<=h<178:
-        print("Your ideal weight is :65 -80 kg")
+        printideaw(65,80)
     elif 180<=h<183:
-        print("Your ideal weight is :70 -85 kg")
+        printideaw(75,85)
     elif 183<=h<184:
-        print("Your ideal weight is :72 -89 kg")
+        printideaw(75,89)
 def bmi(a,b):
     c = round(a/((b/100)**2),2)
     return c 
