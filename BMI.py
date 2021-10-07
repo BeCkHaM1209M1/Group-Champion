@@ -55,7 +55,7 @@ def bmiss(a):
         return("Your body is Grade II obesity")
     elif a ==40:
         return("Your body is Grade III obesity")
-print("If you are an infant(age smaller 1), you do not need to enter your height and your weight!")
+# print("If you are an infant(age smaller 1), you do not need to enter your height and your weight!")
 #Caculator
 if age <= 1:
     cnss = float(input("Birth weight (kg) : "))
