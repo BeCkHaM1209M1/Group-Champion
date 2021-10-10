@@ -24,7 +24,7 @@ def weightideaF(h):
         printideaw(55,60)
     elif 166<=h<168:
         printideaw(56,62)
-    elif 168<=h<170:
+    elif 168<=h<170: 
         printideaw(57,63)
     elif 170<=h<172:
         printideaw(59,65)
@@ -32,6 +32,8 @@ def weightideaF(h):
         printideaw(60,66)
     elif 174<=h<176:
         printideaw(61,67)
+    else:
+        print("You are too fat")
 # weightidea của Male
 def weightideaM(a):
     if 140<=a<142:
@@ -68,7 +70,10 @@ def weightideaM(a):
         printideaw(75,85)
     elif 183<=a<184:
         printideaw(75,89)
+    else:
+        print("You are too fat")
 def solo(h):
+    sex=input("sex : ").capitalize()
     a= True
     if sex.startswith("Ma")==True:
         weightideaM(h)
@@ -76,13 +81,14 @@ def solo(h):
         weightideaF(h)
     else :
         while a:
-            b=input("Nhap lai sex: ")
+            b=input("Nhap lai sex(Femal or Male): ")
             if b.capitalize().startswith("Ma")==True:
                 a = False
-                return weightideaM(h)
+                weightideaM(h)
             elif b.capitalize().startswith("Fe")==True:
                 a = False
-                return weightideaF(h)
+                weightideaF(h)
+#Tinh BMI
 def bmi(a,b):
     c = round(a/((b/100)**2),2)
     return c 
@@ -102,6 +108,8 @@ def bmiss(a):
         return("Your body is Grade II obesity")
     elif a ==40:
         return("Your body is Grade III obesity")
+    else:
+        print("Monster !!")
 # print("If you are an infant(age smaller 1), you do not need to enter your height and your weight!")
 #Caculator
 if age <= 1:
@@ -114,7 +122,6 @@ if age <= 1:
         baby =cnss+3.6+(0.5*stt)
         print(f"Your ideal weight is : {baby} kg")
 elif 2 <= age <=16:
-    sex=input("sex : ").capitalize()
     w= float(input("weight (kg): "))
     a= float(input("Height (cm) : "))
     #Công thức chri số lượng cơ thể (BMI)
@@ -124,7 +131,6 @@ elif 2 <= age <=16:
     print(treem)
     solo(a)
 elif age >16:
-    sex=input("sex : ").capitalize()
     w= float(input("weight (kg): "))
     a= float(input("Height (cm) : "))
     #Công thức chri số lượng cơ thể (BMI)
