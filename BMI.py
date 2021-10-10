@@ -33,7 +33,7 @@ def weightideaF(h):
     elif 174<=h<176:
         printideaw(61,67)
     else:
-        print("You are too fat")
+        print("No Data")
 # weightidea của Male
 def weightideaM(a):
     if 140<=a<142:
@@ -71,7 +71,7 @@ def weightideaM(a):
     elif 183<=a<184:
         printideaw(75,89)
     else:
-        print("You are too fat")
+        print("No Data")
 def solo(h):
     sex=input("sex : ").capitalize()
     a= True
@@ -109,7 +109,7 @@ def bmiss(a):
     elif a ==40:
         return("Your body is Grade III obesity")
     else:
-        print("Monster !!")
+        print("Your are Monster !!")
 # print("If you are an infant(age smaller 1), you do not need to enter your height and your weight!")
 #Caculator
 if age <= 1:
@@ -128,7 +128,6 @@ elif 2 <= age <=16:
     bmi1 =bmi(w,a)
     print("Result".center(30,"-")+f"\n>> Your BMI : {bmi1}\n"+"".ljust(30,"-"))
     treem=bmiss(bmi1)
-    print(treem)
     solo(a)
 elif age >16:
     w= float(input("weight (kg): "))
@@ -137,5 +136,4 @@ elif age >16:
     bmi2= bmi(w,a)
     print("Result".center(30,"-")+f"\n>> Your BMI : {bmi2}\n"+"".ljust(30,"-"))
     nguoilon = bmiss(bmi2)
-    print(nguoilon)
     solo(a)
