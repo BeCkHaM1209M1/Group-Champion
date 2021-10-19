@@ -95,19 +95,19 @@ def bmi(a,b):
 #Tình trạng 
 def bmiss(a):
     if 18.5<=a<=24.9:
-        return ("Your body is normal") 
+        print("Your body is normal") 
     elif 18.5> a:
-        return("Your body is underweight")
+        print("Your body is underweight")
     elif a ==25:
-        return("Your body is overweight")
+        print("Your body is overweight")
     elif 25 <a<= 29.9:
-        return("Your body is Obesity money")
+        print("Your body is Obesity money")
     elif 30<= a<= 34.9:
-        return("Your body is Grade I obesity")
+        print("Your body is Grade I obesity")
     elif 35<= a <=39.9:
-        return("Your body is Grade II obesity")
+        print("Your body is Grade II obesity")
     elif a ==40:
-        return("Your body is Grade III obesity")
+        print("Your body is Grade III obesity")
     else:
         print("Your are Monster !!")
 # print("If you are an infant(age smaller 1), you do not need to enter your height and your weight!")
@@ -127,7 +127,8 @@ elif 2 <= age <=16:
     #Công thức chri số lượng cơ thể (BMI)
     bmi1 =bmi(w,a)
     print("Result".center(30,"-")+f"\n>> Your BMI : {bmi1}\n"+"".ljust(30,"-"))
-    treem=bmiss(bmi1)
+    
+    bmiss(bmi1)
     solo(a)
 elif age >16:
     w= float(input("weight (kg): "))
@@ -135,5 +136,5 @@ elif age >16:
     #Công thức chri số lượng cơ thể (BMI)
     bmi2= bmi(w,a)
     print("Result".center(30,"-")+f"\n>> Your BMI : {bmi2}\n"+"".ljust(30,"-"))
-    nguoilon = bmiss(bmi2)
+    bmiss(bmi2)
     solo(a)
