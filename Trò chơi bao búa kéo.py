@@ -10,7 +10,7 @@ while True:
     #print("Kết quả".center(20,"-"))        #C1
     nguoi=giatri.get(me,'Lỗi')
     if nguoi=="Lỗi":
-        print("ERORS".center(20,"-") ,"\nNo Data\n")
+        print("ERRORS".center(20,"-") ,"\nNo Data\n")
     elif me==4:
         print("End".center(20,"-"),"\nExit....")
         break
