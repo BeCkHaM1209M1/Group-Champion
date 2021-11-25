@@ -3,7 +3,7 @@ i=0
 while True:
     if i==0:
         print("Begin".center(20,"-"),'\n')
-    print(f"Game {i}")
+    print(f"Game {i+1}")
     print("1: Bao\n2: Búa\n3: Kéo\n4: Exit") #Bảng giá trị
     giatri={1:'Bao',2:"Búa",3:"Kéo",4:"Exit"}
     me= int(input("Nhập số: "))  #Nhap du lieu vao
