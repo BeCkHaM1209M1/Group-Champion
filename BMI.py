@@ -1,4 +1,3 @@
-age  = int(input("Your age  : "))
 #Def
 def printideaw(a,b):
     print(f"Your ideal weight is :{a} -{b} kg")
@@ -73,7 +72,7 @@ def weightideaM(a):
     else:
         print("No Data")
 def solo(h):
-    sex=input("sex : ").capitalize()
+    sex=input("Sex : ").capitalize()
     a= True
     if sex.startswith("Ma")==True:
         weightideaM(h)
@@ -110,31 +109,32 @@ def bmiss(a):
         print("Your body is Grade III obesity")
     else:
         print("Your are Monster !!")
+def result(a,b):
+    bio =bmi(a,b)
+    print("Result".center(30,"-")+f"\n>> Your BMI : {bio}\n"+"".ljust(30,"-"))
+    bmiss(bio)
+    solo(a)
 # print("If you are an infant(age smaller 1), you do not need to enter your height and your weight!")
 #Caculator
-if age <= 1:
-    cnss = float(input("Birth weight (kg) : "))
-    stt = int(input("Number of months old : "))
-    if stt<=6:
-        Infant=cnss + (stt*0.6)
-        print(f"Your ideal weight is : {Infant} kg ")
-    elif 7 <= stt<= 12:
-        baby =cnss+3.6+(0.5*stt)
-        print(f"Your ideal weight is : {baby} kg")
-elif 2 <= age <=16:
-    w= float(input("weight (kg): "))
-    a= float(input("Height (cm) : "))
-    #Công thức chri số lượng cơ thể (BMI)
-    bmi1 =bmi(w,a)
-    print("Result".center(30,"-")+f"\n>> Your BMI : {bmi1}\n"+"".ljust(30,"-"))
-    
-    bmiss(bmi1)
-    solo(a)
-elif age >16:
-    w= float(input("weight (kg): "))
-    a= float(input("Height (cm) : "))
-    #Công thức chri số lượng cơ thể (BMI)
-    bmi2= bmi(w,a)
-    print("Result".center(30,"-")+f"\n>> Your BMI : {bmi2}\n"+"".ljust(30,"-"))
-    bmiss(bmi2)
-    solo(a)
+def Math():
+    age  = int(input("Your age  : "))
+    if age <= 1:
+        cnss = int(input("Birth weight (kg) : "))
+        stt = int(input("Number of months old : "))
+        if stt<=6:
+            Infant=cnss + (stt*0.6)
+            print(f"Your ideal weight is : {Infant} kg ")
+        elif 7 <= stt<= 12:
+            baby =cnss+3.6+(0.5*stt)
+            print(f"Your ideal weight is : {baby} kg")
+    elif 2 <= age <=16:
+        w= int(input("weight (kg): "))
+        a= int(input("Height (cm) : "))
+        #Công thức chri số lượng cơ thể (BMI)
+        result(w,a)
+    elif age >16:
+        w= int(input("weight (kg): "))
+        a= int(input("Height (cm) : "))
+        #Công thức chri số lượng cơ thể (BMI)
+        result(w,a)
+Math()
