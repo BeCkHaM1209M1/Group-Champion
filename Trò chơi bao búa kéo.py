@@ -1,5 +1,5 @@
 import random
-n= int(input())
+n= int(input("Nhập số lần chơi : "))
 i=0
 #Bảng giá trị
 print("1: Bao\n2: Búa\n3: Kéo")
